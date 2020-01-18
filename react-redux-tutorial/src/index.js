@@ -8,6 +8,8 @@ import allReducers from './reducers'
 
 const store = createStore(allReducers)
 
+// the provider wraps around the app so that the entire app has access to the store
+
 ReactDOM.render(
   <Provider store={store}>
     <App />,

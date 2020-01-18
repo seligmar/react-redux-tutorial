@@ -1,10 +1,20 @@
 import React from 'react'
 import AppCss from './AppCss.css'
+import { useSelector } from 'react-redux'
 // import { connect } from 'react-redux'
 //
 class App extends React.Component {
   render () {
-    return <div>render?</div>
+    const counter = useSelector(state => state.counter)
+    const isLogged = useSelector(state => state.isLogged)
+    return (
+      <div>
+        <div>Counter {counter}</div>
+        <button>+</button>
+        <button>-</button>
+        {isLogged ? <h1>Hidden Gems!</h1> : ''}
+      </div>
+    )
   }
 }
 
