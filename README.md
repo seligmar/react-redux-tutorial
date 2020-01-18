@@ -8,7 +8,7 @@ For smaller projects, the disadvantage of having to install and import a lot of 
 
 A few key terms:
 
-The store holds all the state needed for the App
+The store holds all the state needed for the App- it is global in scope!
 
 store.js incorporates
 
@@ -20,8 +20,10 @@ Action describes what is being accomplished
 
   <!-- * an action is a simple function that returns an object * -->
 
+actions are always pure functions- which can be difficult to acheive when react projects are being converted to react redux, at least in my experience. My functions have been known, on occasaion, to be more complex than they should be.
+
 Reducers describe how the action changes the state in the store
 
 Dispatch executes action by sending commands via reducers
 
-A note on file structure- it is always easier to
+A note on file structure- it is a best practice to store all reducers and components it their own folders. Actions can also be stored in their own folder. This makes large projects easier to manage and is generally soothing to my German soul.
