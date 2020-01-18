@@ -2,5 +2,9 @@
 // the convention is also to capitalize the value of the object returned by an action
 
 const increment = () => {
-  type: 'INCREMENT'
+  return { type: 'INCREMENT' }
+}
+
+const decrement = () => {
+  return { type: 'DECREMENT' }
 }

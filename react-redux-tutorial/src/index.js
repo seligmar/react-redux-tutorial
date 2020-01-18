@@ -1,17 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore } from redux 
 import { Provider } from 'react-redux'
-import store from './store'
+// import store from './store'
 import App from './App'
+import { createStore } from 'redux'
+import allReducers from './reducers'
 
-let store = createStore(reducer)
-
-// store.subscribe(() => console.log(store.getState()))
+const store = createStore(allReducers)
 
 ReactDOM.render(
-  // <Provider store={store}>
-  <App />,
-  // </Provider>,
+  <Provider store={store}>
+    <App />,
+  </Provider>,
   document.getElementById('root')
 )
