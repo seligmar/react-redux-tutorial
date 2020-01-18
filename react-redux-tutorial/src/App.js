@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 //
 class App extends React.Component {
   render () {
+    // useSelector lets APP access state; ditto for any other component
     const counter = useSelector(state => state.counter)
     const isLogged = useSelector(state => state.isLogged)
     return (
