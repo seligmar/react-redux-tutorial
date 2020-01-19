@@ -16,7 +16,8 @@ combineReducers.js (or similar) is where
 
 <!-- If there is only one type of state it still makes sense to consolidate all reducers using combineReducers so that the App can be easily scaled up  -->
 
-Action describes what is being accomplished
+Action
+the name should be descriptive of what is being accomplished
 
   <!-- * an action is a simple function that returns an object * -->
 
@@ -24,6 +25,10 @@ actions are always pure functions- which can be difficult to acheive when react 
 
 Reducers describe how the action changes the state in the store
 
+<!-- reducers respond to whatever action is dispatched to the store -->
+
 Dispatch executes action by sending commands via reducers
+
+<!-- dispatch -> reducer -> action -->
 
 A note on file structure- it is a best practice to store all reducers and components it their own folders. Actions can also be stored in their own folder. This makes large projects easier to manage and is generally soothing to my German soul.
