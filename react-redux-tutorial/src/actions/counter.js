@@ -4,8 +4,11 @@
 // always return default: return state
 // redux dev tools extension is very nifty- just do a google search for it :)
 
-export const increment = () => {
-  return { type: 'INCREMENT' }
+export const increment = num => {
+  return {
+    type: 'INCREMENT',
+    payload: num
+  }
 }
 
 export const decrement = () => {
