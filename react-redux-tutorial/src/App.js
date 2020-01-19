@@ -12,6 +12,7 @@ function App () {
   return (
     <div className='App'>
       <div>Counter {counter}</div>
+      <br></br>
       <button>+</button>
       <button>-</button>
       {isLogged ? <h1>Hidden Gems!</h1> : ''}
