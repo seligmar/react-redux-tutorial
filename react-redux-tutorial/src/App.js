@@ -1,7 +1,7 @@
 import React from 'react'
 import './AppCss.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { increment, decrement } from './actions'
+import { increment, decrement } from './actions/counter'
 // import { connect } from 'react-redux'
 //
 
