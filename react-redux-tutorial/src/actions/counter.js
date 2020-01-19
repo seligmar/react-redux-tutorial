@@ -4,15 +4,10 @@
 // always return default: return state
 // redux dev tools extension is very nifty- just do a google search for it :)
 
-const counterReducer = (state = 0, action) => {
-  switch (action.type) {
-    case 'INCREMENT':
-      return state + 1
-    case 'DECREMENT':
-      if (state > 0) return state - 1
-    default:
-      return state
-  }
+const increment = () => {
+  return { type: 'INCREMENT' }
 }
 
-export default counterReducer
+const decrement = () => {
+  return { type: 'DECREMENT' }
+}

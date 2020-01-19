@@ -23,6 +23,9 @@ the name should be descriptive of what is being accomplished
 
 actions are always pure functions- which can be difficult to acheive when react projects are being converted to react redux, at least in my experience. My functions have been known, on occasaion, to be more complex than they should be.
 
+// 'type' is the convention used for naming the key of the object returned by an action;
+// the convention is also to capitalize the value of the object returned by an action
+
 Reducers describe how the action changes the state in the store
 
 <!-- reducers respond to whatever action is dispatched to the store -->
