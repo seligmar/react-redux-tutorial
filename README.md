@@ -6,6 +6,18 @@ Redux is useful for managing state in React especially in large apps with lots o
 
 For smaller projects, the disadvantage of having to install and import a lot of standard language and functions that can be easily accomplished in react all on its own. However, for complex projects (or projects that are likely to become complex), with lots of pieces of state to be stored and needed across lots of components, redux provides a valuable way to manage those complexities.
 
+Important note:
+
+To use the super nifty redux dev tools in chrome, you will need to add:
+
+const store = createStore(
+reducer, /_ preloadedState, _/
+
+- window.**REDUX_DEVTOOLS_EXTENSION** && window.**REDUX_DEVTOOLS_EXTENSION**()
+  );
+
+https://github.com/zalmoxisus/redux-devtools-extension#usage
+
 A few key terms:
 
 The store holds all the state needed for the App- it is global in scope!

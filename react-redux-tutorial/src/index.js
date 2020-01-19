@@ -7,7 +7,10 @@ import App from './App'
 import { createStore } from 'redux'
 import allReducers from './reducers'
 
-const store = createStore(allReducers)
+const store = createStore(
+  allReducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 // the provider wraps around the app so that the entire app has access to the store
 
