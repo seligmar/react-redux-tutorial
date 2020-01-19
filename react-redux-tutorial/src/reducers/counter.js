@@ -4,7 +4,7 @@ const counterReducer = (state = 0, action) => {
       return state + 1
     case 'DECREMENT':
       if (state > 0) return state - 1
-      break
+      else return state
     default:
       return state
   }
